@@ -67,10 +67,6 @@ actions:
     args: '/quiet /norestart'
 
   - !writeStatus: {status: 'Installing Revision Tool'}
-  - !download: 
-    url: 'https://github.com/meetrevision/revision-tool/releases/latest/download/RevisionTool-Setup.exe'
-    destination: "RevisionTool-Setup.exe"
-    overwrite: true
   - !run:
     exeDir: true
     exe: "RevisionTool-Setup.exe"
